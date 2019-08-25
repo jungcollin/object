@@ -19,17 +19,6 @@ public class Movie {
     private Money discountAmount;
     private double discountPercent;
 
-    private Movie(MovieType movieType, String title, Duration runningTime, Money fee, Money discountAmount, double discountPercent,
-                  DiscountCondition... discountConditions) {
-        this.movieType = movieType;
-        this.title = title;
-        this.runningTime = runningTime;
-        this.fee = fee;
-        this.discountAmount = discountAmount;
-        this.discountPercent = discountPercent;
-        this.discountConditions = Arrays.asList(discountConditions);
-    }
-
     public MovieType getMovieType() {
         return movieType;
     }
